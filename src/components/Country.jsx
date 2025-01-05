@@ -1,9 +1,16 @@
 import PropTypes from "prop-types";
 
-const Country = ({ card }) => {
+const Country = ({ card, onClick }) => {
   return (
     // TODO: Country component
-    <a className="country" href="#">
+    <a
+      className="country"
+      href="#"
+      onClick={(e) => {
+        e.preventDefault();
+        onClick();
+      }}
+    >
       <div className="country-flag">
         <img src={card.flag} alt={card.name} />
       </div>
@@ -32,6 +39,7 @@ Country.propTypes = {
     region: PropTypes.string.isRequired,
     capital: PropTypes.string.isRequired,
   }).isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Country;

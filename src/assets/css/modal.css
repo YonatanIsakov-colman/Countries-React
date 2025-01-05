@@ -1,0 +1,45 @@
+.modal {
+  position: fixed; /* Ensures the modal stays fixed in the viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width to cover the screen */
+  height: 100%; /* Full height to cover the screen */
+  background: rgba(0, 0, 0, 0.9); /* Semi-transparent background */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  z-index: 1000; /* Ensure it appears on top of other elements */
+}
+
+.modal-content {
+  background: rgb(245, 241, 241); /* Background color for the modal content */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Space inside the modal */
+  width: 400px; /* Width of the modal content */
+  max-width: 90%; /* Prevent it from being too wide on small screens */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for a better look */
+  position: relative; /* For positioning the close button */
+}
+
+.close {
+  position: absolute; /* Position relative to the modal content */
+  top: 10px; /* Space from the top */
+  right: 10px; /* Space from the right */
+  border: none; /* Remove border */
+  background: none; /* Remove background */
+  font-size: 20px; /* Size of the close button */
+  cursor: pointer; /* Cursor changes to a pointer */
+  color: #333; /* Button text color */
+}
+li{
+  font-weight: lighter;
+}
+.modal-left img {
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Optional: rounded corners for the image */
+}
+
+.modal-right {
+  margin-top: 20px;
+}

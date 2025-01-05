@@ -124,6 +124,7 @@ button {
   align-items: center;
   z-index: 9;
   transition: 0.2s linear, opacity 0.2s linear, visibility 0.3s linear;
+  
 }
 
 .loader.close {
